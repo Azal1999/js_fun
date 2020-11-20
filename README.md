@@ -1,1 +1,1 @@
-Hello World!
+JavaScript projects in VSCode
