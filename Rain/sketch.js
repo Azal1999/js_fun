@@ -42,12 +42,17 @@ class Drop {
             this.y = getRandomInt(-200, -100);
             this.ySpeed = map(this.modif, 0, 20, 2, 10);
         }
+
+        /*if(this.y == canvas.height) { 
+            // particle effect on drop hitting ground
+        }*/
     }
 
     show() {
-        let thick = map(this.modif, 0, 20, 0, 3);
+        let thick = map(this.modif, 0, 20, 0.5, 3);
         strokeWeight(thick);
         stroke(150, 160, 225);
         line(this.x, this.y, this.x, this.y + this.length);
     }
+
 }
